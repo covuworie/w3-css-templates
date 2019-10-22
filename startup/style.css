@@ -3,3 +3,70 @@
     border: 0;
     box-sizing: border-box;
 }
+
+/* Document and Main Grids */
+.document {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        "about about about about about about"
+        "design design design design design design"
+        "team team team team team team"
+        "stats stats stats stats stats stats"
+        "work work work work work work"
+        "skills skills skills skills skills skills"
+        "pricing pricing pricing pricing pricing pricing"
+        "contact contact contact contact contact contact";
+}
+
+.about {
+    grid-area: about;
+}
+
+.design {
+    grid-area: design;
+}
+
+.team {
+    grid-area: team;
+}
+
+.stats {
+    grid-area: stats;
+}
+
+.work {
+    grid-area: work;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.pricing {
+    grid-area: pricing;
+}
+
+.contact {
+    grid-area: contact;
+}
