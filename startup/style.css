@@ -24,6 +24,12 @@ h2 {
     margin: 20px 0;
 }
 
+h4 {
+    font-size: 24px;
+    font-weight: 100;
+    margin: 20px 0;
+}
+
 h6 {
     font-size: 18px;
     font-weight: 100;
@@ -65,7 +71,7 @@ section {
     grid-template-columns:20px repeat(4, 1fr) 20px;
     grid-template-areas:
         ". about about about about ."
-        ". design design design design ."
+        "design design design design design design"
         ". team team team team ."
         "stats stats stats stats stats stats"
         ". work work work work ."
@@ -79,7 +85,11 @@ section {
 }
 
 .design {
+    display: flex;
+    flex-flow: column nowrap;
     grid-area: design;
+    background-color: #f1f1f1;
+    padding: 100px 20px 100px 20px;
 }
 
 .team {
@@ -120,12 +130,45 @@ section {
     font-size: 64px !important;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* Images */
+img {
+    width: 100%;
+}
+
+/* Buttons */
+.dark-button {
+    background-color: #000;
+    padding: 12px;
+}
+
+.dark-button:hover {
+    background-color: #d3d3d3;
+}
+
+.dark-button > a {
+    color: #fff;
+    font-size: 18px;
+}
+
+
 /* Larger Screen Styles */
 @media screen and (min-width: 600px){
     .key-features {
         flex-flow: row nowrap;
         text-align: center;
         margin: 0 30px;
+    }
+
+    .design {
+        flex-flow: row nowrap;
+    }
+
+    .design p {
+        margin-right: 100px;
     }
 }
 
