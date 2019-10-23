@@ -4,6 +4,41 @@
     box-sizing: border-box;
 }
 
+/* Text */
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1.8;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
 /* Document and Main Grids */
 .document {
     display: grid;
@@ -27,16 +62,16 @@
     grid-area: main;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns:20px repeat(4, 1fr) 20px;
     grid-template-areas:
-        "about about about about about about"
-        "design design design design design design"
-        "team team team team team team"
+        ". about about about about ."
+        ". design design design design ."
+        ". team team team team ."
         "stats stats stats stats stats stats"
-        "work work work work work work"
+        ". work work work work ."
         "skills skills skills skills skills skills"
-        "pricing pricing pricing pricing pricing pricing"
-        "contact contact contact contact contact contact";
+        ". pricing pricing pricing pricing ."
+        ". contact contact contact contact .";
 }
 
 .about {
@@ -70,3 +105,27 @@
 .contact {
     grid-area: contact;
 }
+
+.key-features {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+.features > i {
+    padding-bottom: 30px;
+}
+
+.big-icon {
+    font-size: 64px !important;
+}
+
+/* Larger Screen Styles */
+@media screen and (min-width: 600px){
+    .key-features {
+        flex-flow: row nowrap;
+        text-align: center;
+        margin: 0 30px;
+    }
+}
+
