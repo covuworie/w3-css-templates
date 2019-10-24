@@ -27,7 +27,8 @@ h2 {
 h4 {
     font-size: 24px;
     font-weight: 100;
-    margin: 20px 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 h6 {
@@ -38,7 +39,7 @@ h6 {
 }
 
 p {
-    margin-bottom: 20px;
+    margin: 0 20px 20px;
 }
 
 section {
@@ -89,7 +90,8 @@ section {
     flex-flow: column nowrap;
     grid-area: design;
     background-color: #f1f1f1;
-    padding: 100px 20px 100px 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .team {
@@ -139,10 +141,16 @@ img {
     width: 100%;
 }
 
+figcaption {
+    font-size: 24px;
+    margin: 0 0 10px 20px;
+}
+
 /* Buttons */
 .dark-button {
     background-color: #000;
     padding: 12px;
+    margin-left: 20px;
 }
 
 .dark-button:hover {
@@ -154,13 +162,57 @@ img {
     font-size: 18px;
 }
 
+.light-button {
+    background-color: #f5f5f5;
+    color: #000;
+    font-size: 14px;
+    margin-left: 15px;
+    padding: 12px;
+    width: 90%;
+}
 
-/* Larger Screen Styles */
+/* Team Grid */
+.team-members {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "john"
+        "anja"
+        "mike"
+        "dan";
+    gap: 10px;
+}
+
+.john {
+    grid-area: john;
+}
+
+.anja {
+    grid-area: anja;
+}
+
+.mike {
+    grid-area: mike;
+}
+
+.dan {
+    grid-area: dan;
+}
+
+.team-member {
+    border: 3px solid #d3d3d3;
+    padding-bottom: 20px;
+}
+
+.team-member > :nth-child(2) {
+    color: #a9a9a9;
+}
+
+/* Medium Screen Styles */
 @media screen and (min-width: 600px){
     .key-features {
         flex-flow: row nowrap;
         text-align: center;
-        margin: 0 30px;
     }
 
     .design {
@@ -170,5 +222,20 @@ img {
     .design p {
         margin-right: 100px;
     }
+
+    .team-members {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "john anja"
+            "mike dan";
+    }
 }
 
+/* Larger Screen Styles */
+@media screen and (min-width: 1000px){
+    .team-members {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "john anja mike dan";
+    }
+}
