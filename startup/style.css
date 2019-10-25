@@ -43,7 +43,7 @@ p {
 }
 
 section {
-    margin-bottom: 100px;
+    padding: 100px 0;
 }
 
 /* Document and Main Grids */
@@ -90,8 +90,6 @@ section {
     flex-flow: column nowrap;
     grid-area: design;
     background-color: #f1f1f1;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .team {
@@ -208,6 +206,26 @@ figcaption {
     color: #a9a9a9;
 }
 
+/* Stats */
+.stats {
+    background-color:#616161;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.stat-numbers {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+}
+
+.stat-numbers span {
+    font-size: 36px;
+}
+
+
 /* Work Grid */
 .work-examples {
     display: grid;
@@ -253,6 +271,11 @@ figcaption {
             "drone soundbox"
             "tablet camera"
             "typewriter tableturner";
+    }
+
+    .stat-numbers {
+        flex-flow: row nowrap;
+        justify-content: space-around;
     }
 }
 
