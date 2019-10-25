@@ -208,6 +208,22 @@ figcaption {
     color: #a9a9a9;
 }
 
+/* Work Grid */
+.work-examples {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "microphone"
+        "phone"
+        "drone"
+        "soundbox"
+        "tablet"
+        "camera"
+        "typewriter"
+        "tableturner";
+    gap: 10px;
+}
+
 /* Medium Screen Styles */
 @media screen and (min-width: 600px){
     .key-features {
@@ -229,6 +245,15 @@ figcaption {
             "john anja"
             "mike dan";
     }
+
+    .work-examples {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "microphone phone"
+            "drone soundbox"
+            "tablet camera"
+            "typewriter tableturner";
+    }
 }
 
 /* Larger Screen Styles */
@@ -237,5 +262,12 @@ figcaption {
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
             "john anja mike dan";
+    }
+
+    .work-examples {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "microphone phone drone soundbox"
+            "tablet camera typewriter tableturner";
     }
 }
