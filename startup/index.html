@@ -8,6 +8,7 @@
         <title>startup template</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body class="document">
@@ -166,21 +167,30 @@
 
             <!-- Our skills -->
             <section class="skills">
-                <h4>Our skills.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                <div>
-                    <p><i class="fa fa-camera" aria-hidden="true"></i> Photography</p>
-                    <p>90%</p>
+                <div class="skill">
+                    <h4>Our skills.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                 </div>
-                <div>
-                    <p><i class="fa fa-desktop" aria-hidden="true"></i> Web Design</p>
-                    <p>85%</p>
-                </div>
-                <div>
-                    <p><i class="fa fa-photo" aria-hidden="true"></i> Photoshop</p>
-                    <p>75%</p>
-                </div>
+                <ul class="skill">
+                    <li>
+                         <i class="fa fa-camera" aria-hidden="true"></i>   <span>Photography</span>
+                        <div class="progress" style="height: 30px; background-color: #a9a9a9">
+                            <div class="progress-bar" style="width: 90%; background-color: #616161;">90%<div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-desktop" aria-hidden="true"></i> <span>Web Design</span> 
+                        <div class="progress" style="height: 30px; background-color: #a9a9a9">
+                            <div class="progress-bar" style="width: 85%; background-color: #616161;">85%<div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-photo" aria-hidden="true"></i> <span>Photoshop</span>
+                        <div class="progress" style="height: 30px; background-color: #a9a9a9">
+                            <div class="progress-bar" style="width: 75%; background-color: #616161;">75%<div>
+                        </div>
+                    </li>
             </section>
 
             <!-- Pricing -->

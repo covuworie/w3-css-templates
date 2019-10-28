@@ -86,10 +86,7 @@ section {
 }
 
 .design {
-    display: flex;
-    flex-flow: column nowrap;
     grid-area: design;
-    background-color: #f1f1f1;
 }
 
 .team {
@@ -120,6 +117,13 @@ section {
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
+}
+
+.design,
+.skills {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #f1f1f1;
 }
 
 .features > i {
@@ -242,6 +246,21 @@ figcaption {
     gap: 10px;
 }
 
+/* Skills */
+.skills > ul {
+    padding: 0;
+    margin: 0 20px;
+}
+
+.skills li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.skills i {
+    padding: 20px 20px 20px 0;
+}
+
 /* Medium Screen Styles */
 @media screen and (min-width: 600px){
     .key-features {
@@ -249,8 +268,13 @@ figcaption {
         text-align: center;
     }
 
-    .design {
+    .design,
+    .skills {
         flex-flow: row nowrap;
+    }
+
+    .skill {
+        width: 50%;
     }
 
     .design p {
