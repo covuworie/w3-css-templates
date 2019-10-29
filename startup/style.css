@@ -77,7 +77,7 @@ section {
         "stats stats stats stats stats stats"
         ". work work work work ."
         "skills skills skills skills skills skills"
-        ". pricing pricing pricing pricing ."
+        "pricing pricing pricing pricing pricing pricing"
         ". contact contact contact contact .";
 }
 
@@ -151,8 +151,9 @@ figcaption {
 /* Buttons */
 .dark-button {
     background-color: #000;
-    padding: 12px;
+    /* padding: 12px; */
     margin-left: 20px;
+    color: #fff;
 }
 
 .dark-button:hover {
@@ -211,7 +212,8 @@ figcaption {
 }
 
 /* Stats */
-.stats {
+.stats,
+.pricing {
     background-color:#616161;
     color: #fff;
     padding: 50px 0;
@@ -261,6 +263,57 @@ figcaption {
     padding: 20px 20px 20px 0;
 }
 
+/* Pricing */
+.pricing-tiers {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.pricing-tier {
+    margin: 0 30px 15px 30px;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    background-color: #fff;
+}
+
+.pricing-tier {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-tier li {
+    padding: 15px;
+    border-bottom: 1px solid #d3d3d3;
+    color: #000;
+}
+
+.pricing-tier li:nth-child(1) {
+    background-color: #000;
+    font-size: 24px;
+    color: #fff;
+    padding: 30px;
+}
+
+.pricing-tier-pro li:nth-child(1) {
+    background-color: #f44336 !important;
+}
+
+.pricing-tier li:last-child {
+    border-bottom: none;
+    background-color:#f5f5f5;
+}
+
+.pricing-tier span {
+    color: #616161;
+    font-size: 16px;
+}
+
+.price {
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+}
+
+
 /* Medium Screen Styles */
 @media screen and (min-width: 600px){
     .key-features {
@@ -300,6 +353,17 @@ figcaption {
     .stat-numbers {
         flex-flow: row nowrap;
         justify-content: space-around;
+    }
+
+    .pricing-tiers {
+        flex-flow: row nowrap;
+        padding: 5px;
+    }
+
+    /* I think using CSS Grid for "pricing-tier" boxes would have been better as you cannot use flex-grow on the cross-axis (vertical axis) to make the "pricing-tier-pro" box bigger than the others. */
+    .pricing-tier {
+        width: 100%;
+        margin: 10px;
     }
 }
 
