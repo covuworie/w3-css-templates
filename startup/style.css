@@ -42,7 +42,8 @@ p {
     margin: 0 20px 20px;
 }
 
-section {
+section,
+footer {
     padding: 100px 0;
 }
 
@@ -176,7 +177,6 @@ figcaption {
     font-size: 14px;
     margin-left: 15px;
     padding: 12px;
-    width: 90%;
 }
 
 /* Team Grid */
@@ -214,6 +214,10 @@ figcaption {
 
 .team-member > :nth-child(2) {
     color: #a9a9a9;
+}
+
+.team-member button {
+    width: 90%;
 }
 
 /* Stats */
@@ -362,6 +366,37 @@ figcaption {
     margin-bottom: 50px;
 }
 
+/* Footer */
+.footer {
+    background-color: #000;
+    text-align: center;
+}
+
+.footer p {
+    color: #fff;
+}
+
+.footer a {
+    color: #000;
+}
+
+.footer span {
+    padding-left: 10px;
+}
+
+.footer p a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer div .fa {
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.small-icon {
+    font-size: 24px !important;
+}
 
 /* Medium Screen Styles */
 @media screen and (min-width: 600px){
