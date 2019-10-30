@@ -86,7 +86,7 @@
                 <div class="team-members">
                     <div class="team-member john">
                         <figure>
-                            <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Portrait of John Doe, CEO & Founder.">
+                            <img class="greyscale-75" src="https://www.w3schools.com/w3images/team2.jpg" alt="Portrait of John Doe, CEO & Founder.">
                             <figcaption>John Doe</figcaption>
                         </figure>
                         <p>CEO & Founder</p>
@@ -95,7 +95,7 @@
                     </div >
                     <div class="team-member anja">
                         <figure>
-                            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Portrait of Anja Doe, Art Director.">
+                            <img class="greyscale-75" src="https://www.w3schools.com/w3images/team1.jpg" alt="Portrait of Anja Doe, Art Director.">
                             <figcaption>Anja Doe</figcaption>
                         </figure>
                         <p>Art Director</p>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="team-member mike">
                         <figure>
-                            <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Portrait of Mike Ross, Web Designer.">
+                            <img class="greyscale-75" src="https://www.w3schools.com/w3images/team3.jpg" alt="Portrait of Mike Ross, Web Designer.">
                             <figcaption>Mike Ross</figcaption>
                         </figure>
                         <p>Web Designer</p>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="team-member dan">
                         <figure>
-                            <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Portrait of Dan Star, Designer.">
+                            <img class="greyscale-75" src="https://www.w3schools.com/w3images/team4.jpg" alt="Portrait of Dan Star, Designer.">
                             <figcaption>Dan Star</figcaption>
                         </figure>
                         <p>Designer</p>
@@ -232,24 +232,32 @@
             <!-- Contact -->
             <section class="contact" id="contact">
                 <h2>contact</h2>
-                <h6>send us a message</h6>
-                <ul>
-                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> Chicago, US</li>
-                    <li><i class="fa fa-phone" aria-hidden="true"></i> +00 151515</li>
-                    <li><i class="fa fa-envelope" aria-hidden="true"></i> mail@mail.com</li>
-                </ul>
+                <h6>Let's get in touch. Send us a message:</h6>
+                <p><i class="fa fa-map-marker medium-icon" aria-hidden="true"></i> <span class="contact-location">Chicago, US</span></p>
+                <p><i class="fa fa-phone medium-icon" aria-hidden="true"></i> <span class="contact-phone">+00 151515</span></p>
+                <p><i class="fa fa-envelope medium-icon" aria-hidden="true"></i> <span class="contact-email">mail@mail.com</span></li></p>
                 <form action="" method="get">
-                    <input id="name" name="name" type="text" placeholder="Name" required>
-                    <input id="email" name="email" type="email" placeholder="Email" required>
-                    <input id="subject" name="subject" type="text" placeholder="Subject" required>
-                    <textarea id="message" name="message" placeholder="Message"></textarea>
-                    <button><i class="fa fa-paper-plane" aria-hidden="true"></i> Send Message</button> 
+                    <div>
+                        <input class="contact-form-field" id="name" name="name" type="text" placeholder="Name" required>
+                    </div>
+                    <div>
+                        <input class="contact-form-field" id="email" name="email" type="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <input class="contact-form-field" id="subject" name="subject" type="text" placeholder="Subject" required>
+                    </div>
+                    <div>
+                        <textarea class="contact-form-field message-form-field" id="message" name="message" placeholder="Message"></textarea>
+                    </div>
+                    <button class="dark-button"><i class="fa fa-paper-plane" aria-hidden="true"></i> SEND MESSAGE</button>
                 </form>
 
                 <!-- Map image -->
-                <figure>
-                    <img src="https://www.w3schools.com/w3images/map.jpg" alt="A plan view map of a road junction.">
-                </figure>
+                <div>
+                    <figure class="map">
+                        <img class="greyscale-75" src="https://www.w3schools.com/w3images/map.jpg" alt="A plan view map of a road junction.">
+                    </figure>
+                </div>
             </section>
 
         </main>

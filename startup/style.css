@@ -78,7 +78,7 @@ section {
         ". work work work work ."
         "skills skills skills skills skills skills"
         "pricing pricing pricing pricing pricing pricing"
-        ". contact contact contact contact .";
+        "contact contact contact contact contact contact";
 }
 
 .about {
@@ -120,7 +120,8 @@ section {
 }
 
 .design,
-.skills {
+.skills,
+.contact {
     display: flex;
     flex-flow: column nowrap;
     background-color: #f1f1f1;
@@ -148,10 +149,14 @@ figcaption {
     margin: 0 0 10px 20px;
 }
 
+.greyscale-75 {
+    filter: grayscale(75%);
+}
+
 /* Buttons */
 .dark-button {
     background-color: #000;
-    /* padding: 12px; */
+    padding: 12px;
     margin-left: 20px;
     color: #fff;
 }
@@ -311,6 +316,50 @@ figcaption {
 .price {
     padding: 30px 30px 0 30px;
     font-size: 24px;
+}
+
+/* Contact */
+.contact p {
+    font-size: 18px;
+}
+
+.contact div {
+    margin: 0 20px;
+}
+
+.medium-icon {
+    font-size: 36px !important;
+}
+
+/* Aligning the right space for icons to line up is a pain when they are of different widths. Ugly code, but it works. */
+.contact-location {
+    padding-left: 20px;
+}
+
+.contact-phone {
+    padding-left: 12px;
+}
+
+.contact-email {
+    padding-left: 8px;
+}
+
+.contact div {
+    margin-bottom: 10px;
+}
+
+.contact-form-field {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+}
+
+.message-form-field {
+    height: 100px;
+}
+
+.contact button {
+    margin-bottom: 50px;
 }
 
 
