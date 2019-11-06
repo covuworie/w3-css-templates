@@ -48,18 +48,23 @@ footer {
 }
 
 /* Document and Main Grids */
-.document {
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+    z-index: 1;
+}
+
+.main-grid {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas:
-        "header"
         "main"
         "footer";
-}
-
-.header {
-    grid-area: header;
+    margin-top: 50px;
 }
 
 .footer {
@@ -72,6 +77,7 @@ footer {
     grid-template-rows: auto;
     grid-template-columns:20px repeat(4, 1fr) 20px;
     grid-template-areas:
+        "banner banner banner banner banner banner"
         ". about about about about ."
         "design design design design design design"
         ". team team team team ."
@@ -80,6 +86,29 @@ footer {
         "skills skills skills skills skills skills"
         "pricing pricing pricing pricing pricing pricing"
         "contact contact contact contact contact contact";
+}
+
+.banner {
+    grid-area: banner;
+    height: 100vh;
+    background-image: url("https://www.w3schools.com//w3images/mac.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(50%);
+    color: #fff;
+}
+
+.banner h1 {
+    text-align: left;
+    font-size: 40px;
+    font-weight: normal;
+    padding: 100px 0 50px 50px;
+}
+
+.banner h6 {
+    text-align: left;
+    padding: 0 0 30px 50px;
 }
 
 .about {
@@ -138,9 +167,18 @@ footer {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 /* Images */
+.fa {
+    color: #000;  
+}
+
+.banner-icons .small-icon {
+    color: #a9a9a9;
+}
+
 img {
     width: 100%;
 }
@@ -162,7 +200,9 @@ figcaption {
     color: #fff;
 }
 
-.dark-button:hover {
+.dark-button:hover,
+.grey-button:hover,
+.light-button:hover {
     background-color: #d3d3d3;
 }
 
@@ -177,6 +217,43 @@ figcaption {
     font-size: 14px;
     margin-left: 15px;
     padding: 12px;
+}
+
+.grey-button {
+    margin: 0 0 30px 50px;
+    background-color: #a9a9a9;
+    color: #000;
+}
+
+.banner-icons {
+    position: absolute; /* w3 schools does this in a hacky way */
+    bottom: 30px;
+    left: 50px;
+}
+
+/* Main Navigation */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+}
+
+.main-nav a {
+    margin-right: 20px;
+    color: #000;
+    padding: 16px;
+}
+
+.main-nav a:hover {
+    background-color: #d3d3d3;
+    text-decoration: none;
+    color: #000;
+}
+
+.header-brand {
+    margin-left: 20px;
 }
 
 /* Team Grid */
@@ -376,10 +453,6 @@ figcaption {
     color: #fff;
 }
 
-.footer a {
-    color: #000;
-}
-
 .footer span {
     padding-left: 10px;
 }
@@ -388,6 +461,7 @@ figcaption {
     color: #fff;
     text-decoration: underline;
 }
+
 
 .footer div .fa {
     color: #fff;
@@ -400,6 +474,10 @@ figcaption {
 
 /* Medium Screen Styles */
 @media screen and (min-width: 600px){
+    .banner h1 {
+        font-size: 64px;
+    }
+
     .key-features {
         flex-flow: row nowrap;
         text-align: center;

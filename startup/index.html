@@ -11,270 +11,277 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body class="document">
+    <body>
         <!-- Header -->
         <header class="header">
-            <a href="index.html" id="home">logo</a>
-            <nav>
-                <ol>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#team"><i class="fa fa-users" aria-hidden="true"></i> team</a></li>
-                    <li><a href="#work"><i class="fa fa-th" aria-hidden="true"></i> work</a></li>
-                    <li><a href="#pricing"><i class="fa fa-usd" aria-hidden="true"></i> pricing</a></li>
-                    <li><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> contact</a></li>
-                </ol>
+            <nav class="main-nav">
+                <a class="header-brand" href="index.html" id="home">LOGO</a>
+                <div>
+                    <a href="#about">ABOUT</a>
+                    <a href="#team"><i class="fa fa-users" aria-hidden="true"></i> TEAM</a>
+                    <a href="#work"><i class="fa fa-th" aria-hidden="true"></i> WORK</a>
+                    <a href="#pricing"><i class="fa fa-usd" aria-hidden="true"></i> PRICING</a>
+                    <a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> CONTACT</a>
+                </div>
             </nav>
-            <h1>Start something that matters</h1>
-            <h6>Stop wasting valuable time with projects that just isn't you.</h6>
-            <button><a href="#about">Learn more and start today</a></button>
-            <div>
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-snapchat" aria-hidden="true"></i>
-                <i class="fa fa-pinterest" aria-hidden="true"></i>
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </div>
         </header>
 
-        <!-- Main part of page -->
-        <main class="main" role="main">
-            <!-- About -->
-            <section class="about" id="about">
-                <h2>about the company</h2>
-                <h6>Key features of our company</h6>
-                <div class="key-features">
-                    <div class="features">
-                        <i class="fa fa-desktop big-icon" aria-hidden="true"></i>
-                        <p>Responsive</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p> 
+        <!-- Main grid -->
+        <div class="main-grid">
+
+            <!-- Main part of page -->
+            <main class="main" role="main">
+                <!-- Banner -->
+                <section class="banner">
+                    <h1>Start something that matters</h1>
+                    <h6>Stop wasting valuable time with projects that just isn't you.</h6>
+                    <a href="#about"><button class="light-button grey-button">Learn more and start today</button></a>
+                    <div class="banner-icons">
+                        <a href=""><i class="fa fa-facebook-official small-icon" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-instagram small-icon" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-snapchat small-icon" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-pinterest small-icon" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter-square small-icon" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-linkedin-square small-icon" aria-hidden="true"></i></a>
                     </div>
-                    <div class="features">
-                        <i class="fa fa-heart big-icon" aria-hidden="true"></i>
-                        <p>Passion</p>
+                </section>
+
+                <!-- About -->
+                <section class="about" id="about">
+                    <h2>about the company</h2>
+                    <h6>Key features of our company</h6>
+                    <div class="key-features">
+                        <div class="features">
+                            <i class="fa fa-desktop big-icon" aria-hidden="true"></i>
+                            <p>Responsive</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p> 
+                        </div>
+                        <div class="features">
+                            <i class="fa fa-heart big-icon" aria-hidden="true"></i>
+                            <p>Passion</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        </div>
+                        <div class="features">
+                            <i class="fa fa-diamond big-icon" aria-hidden="true"></i>
+                            <p>Design</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        </div>
+                        <div class="features">
+                            <i class="fa fa-cog big-icon" aria-hidden="true"></i>
+                            <p>Support</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- We know design -->
+                <section class="design">
+                    <div>
+                        <h4>We know design.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <a href="#work"><button class="dark-button"><i class="fa fa-th" aria-hidden="true"></i> View Our Works</button></a>
+                    </div>
+                    <figure>
+                        <img src="https://www.w3schools.com/w3images/phone_buildings.jpg" alt="Hand holding a phone with buildings in the background.">
+                    </figure>
+                </section>
+
+                <!-- Team -->
+                <section class="team" id="team">
+                    <h2>the team</h2>
+                    <h6>The ones who run this company</h6>
+                    <div class="team-members">
+                        <div class="team-member john">
+                            <figure>
+                                <img class="greyscale-75" src="https://www.w3schools.com/w3images/team2.jpg" alt="Portrait of John Doe, CEO & Founder.">
+                                <figcaption>John Doe</figcaption>
+                            </figure>
+                            <p>CEO & Founder</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <a href="#contact"><button class="light-button"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</button></a>
+                        </div >
+                        <div class="team-member anja">
+                            <figure>
+                                <img class="greyscale-75" src="https://www.w3schools.com/w3images/team1.jpg" alt="Portrait of Anja Doe, Art Director.">
+                                <figcaption>Anja Doe</figcaption>
+                            </figure>
+                            <p>Art Director</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <a href="#contact"><button class="light-button"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</button></a>
+                        </div>
+                        <div class="team-member mike">
+                            <figure>
+                                <img class="greyscale-75" src="https://www.w3schools.com/w3images/team3.jpg" alt="Portrait of Mike Ross, Web Designer.">
+                                <figcaption>Mike Ross</figcaption>
+                            </figure>
+                            <p>Web Designer</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <a href="#contact"><button class="light-button"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</button></a>
+                        </div>
+                        <div class="team-member dan">
+                            <figure>
+                                <img class="greyscale-75" src="https://www.w3schools.com/w3images/team4.jpg" alt="Portrait of Dan Star, Designer.">
+                                <figcaption>Dan Star</figcaption>
+                            </figure>
+                            <p>Designer</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <a href="#contact"><button class="light-button"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</button></a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Stats -->
+                <section class="stats">
+                    <ul class="stat-numbers">
+                        <li><span>14+</span> <br> Partners</li>
+                        <li><span>55+</span> <br> Projects Done</li>
+                        <li><span>89+</span> <br> Happy Clients</li>
+                        <li><span>150+</span> <br> Meetings</li>
+                    </ul>
+                </section>
+
+                <!-- Work -->
+                <section class="work" id="work">
+                    <h2>our work</h2>
+                    <h6>What we've done for people</h6>
+                    <div class="work-examples">
+                        <figure class="microphone">
+                            <img src="https://www.w3schools.com/w3images/tech_mic.jpg" alt="A microphone on a stand.">
+                        </figure>
+                        <figure class="phone">
+                            <img src="https://www.w3schools.com/w3images/tech_phone.jpg" alt="An Apple iphone on a table.">
+                        </figure>
+                        <figure class="drone">
+                            <img src="https://www.w3schools.com/w3images/tech_drone.jpg" alt="A drone flying above trees.">
+                        </figure>
+                        <figure class="soundbox">
+                            <img src="https://www.w3schools.com/w3images/tech_sound.jpg" alt="A soundbox.">
+                        </figure>
+                        <figure class="tablet">
+                            <img src="https://www.w3schools.com/w3images/tech_tablet.jpg" alt="A tablet on an open laptop.">
+                        </figure>
+                        <figure class="camera">
+                            <img src="https://www.w3schools.com/w3images/tech_camera.jpg" alt="A camera.">
+                        </figure>
+                        <figure class="typewriter">
+                            <img src="https://www.w3schools.com/w3images/tech_typewriter.jpg" alt="A typewriter.">
+                        </figure>
+                        <figure class="tableturner">
+                            <img src="https://www.w3schools.com/w3images/tech_tableturner.jpg" alt="A tableturner.">
+                        </figure>
+                    </div>
+                </section>
+
+                <!-- Our skills -->
+                <section class="skills">
+                    <div class="skill">
+                        <h4>Our skills.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                     </div>
-                    <div class="features">
-                        <i class="fa fa-diamond big-icon" aria-hidden="true"></i>
-                        <p>Design</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    </div>
-                    <div class="features">
-                        <i class="fa fa-cog big-icon" aria-hidden="true"></i>
-                        <p>Support</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- We know design -->
-            <section class="design">
-                <div>
-                    <h4>We know design.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <button class="dark-button"><a href="#work"><i class="fa fa-th" aria-hidden="true"></i> View Our Works</a></button>
-                </div>
-                <figure>
-                    <img src="https://www.w3schools.com/w3images/phone_buildings.jpg" alt="Hand holding a phone with buildings in the background.">
-                </figure>
-            </section>
-
-            <!-- Team -->
-            <section class="team" id="team">
-                <h2>the team</h2>
-                <h6>The ones who run this company</h6>
-                <div class="team-members">
-                    <div class="team-member john">
-                        <figure>
-                            <img class="greyscale-75" src="https://www.w3schools.com/w3images/team2.jpg" alt="Portrait of John Doe, CEO & Founder.">
-                            <figcaption>John Doe</figcaption>
-                        </figure>
-                        <p>CEO & Founder</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <button class="light-button"><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></button>
-                    </div >
-                    <div class="team-member anja">
-                        <figure>
-                            <img class="greyscale-75" src="https://www.w3schools.com/w3images/team1.jpg" alt="Portrait of Anja Doe, Art Director.">
-                            <figcaption>Anja Doe</figcaption>
-                        </figure>
-                        <p>Art Director</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <button class="light-button"><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></button>
-                    </div>
-                    <div class="team-member mike">
-                        <figure>
-                            <img class="greyscale-75" src="https://www.w3schools.com/w3images/team3.jpg" alt="Portrait of Mike Ross, Web Designer.">
-                            <figcaption>Mike Ross</figcaption>
-                        </figure>
-                        <p>Web Designer</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <button class="light-button"><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></button>
-                    </div>
-                    <div class="team-member dan">
-                        <figure>
-                            <img class="greyscale-75" src="https://www.w3schools.com/w3images/team4.jpg" alt="Portrait of Dan Star, Designer.">
-                            <figcaption>Dan Star</figcaption>
-                        </figure>
-                        <p>Designer</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <button class="light-button"><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Stats -->
-            <section class="stats">
-                <ul class="stat-numbers">
-                    <li><span>14+</span> <br> Partners</li>
-                    <li><span>55+</span> <br> Projects Done</li>
-                    <li><span>89+</span> <br> Happy Clients</li>
-                    <li><span>150+</span> <br> Meetings</li>
-                </ul>
-            </section>
-
-            <!-- Work -->
-            <section class="work" id="work">
-                <h2>our work</h2>
-                <h6>What we've done for people</h6>
-                <div class="work-examples">
-                    <figure class="microphone">
-                        <img src="https://www.w3schools.com/w3images/tech_mic.jpg" alt="A microphone on a stand.">
-                    </figure>
-                    <figure class="phone">
-                        <img src="https://www.w3schools.com/w3images/tech_phone.jpg" alt="An Apple iphone on a table.">
-                    </figure>
-                    <figure class="drone">
-                        <img src="https://www.w3schools.com/w3images/tech_drone.jpg" alt="A drone flying above trees.">
-                    </figure>
-                    <figure class="soundbox">
-                        <img src="https://www.w3schools.com/w3images/tech_sound.jpg" alt="A soundbox.">
-                    </figure>
-                    <figure class="tablet">
-                        <img src="https://www.w3schools.com/w3images/tech_tablet.jpg" alt="A tablet on an open laptop.">
-                    </figure>
-                    <figure class="camera">
-                        <img src="https://www.w3schools.com/w3images/tech_camera.jpg" alt="A camera.">
-                    </figure>
-                    <figure class="typewriter">
-                        <img src="https://www.w3schools.com/w3images/tech_typewriter.jpg" alt="A typewriter.">
-                    </figure>
-                    <figure class="tableturner">
-                        <img src="https://www.w3schools.com/w3images/tech_tableturner.jpg" alt="A tableturner.">
-                    </figure>
-                </div>
-            </section>
-
-            <!-- Our skills -->
-            <section class="skills">
-                <div class="skill">
-                    <h4>Our skills.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                </div>
-                <ul class="skill">
-                    <li>
-                         <i class="fa fa-camera" aria-hidden="true"></i>   <span>Photography</span>
-                        <div class="progress" style="height: 30px; background-color: #a9a9a9">
-                            <div class="progress-bar" style="width: 90%; background-color: #616161;">90%</div>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fa fa-desktop" aria-hidden="true"></i> <span>Web Design</span> 
-                        <div class="progress" style="height: 30px; background-color: #a9a9a9">
-                            <div class="progress-bar" style="width: 85%; background-color: #616161;">85%</div>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fa fa-photo" aria-hidden="true"></i> <span>Photoshop</span>
-                        <div class="progress" style="height: 30px; background-color: #a9a9a9">
-                            <div class="progress-bar" style="width: 75%; background-color: #616161;">75%</div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- Pricing -->
-            <section class="pricing" id="pricing">
-                <h2>pricing</h2>
-                <h6>choose a pricing plan that fits your needs</h6>
-                <div class="pricing-tiers">
-                    <ul class="pricing-tier">
-                        <li>Basic</li>
-                        <li><strong>10GB</strong> Storage</li>
-                        <li><strong>10</strong> Emails</li>
-                        <li><strong>10</strong> Domains</li>
-                        <li><strong>Endless</strong> Support</li>
-                        <li class="price"><strong>$10</strong> <br> <span>per month</span></li>
-                        <li><button class="dark-button">Sign Up</button></li>
+                    <ul class="skill">
+                        <li>
+                            <i class="fa fa-camera" aria-hidden="true"></i>   <span>Photography</span>
+                            <div class="progress" style="height: 30px; background-color: #a9a9a9">
+                                <div class="progress-bar" style="width: 90%; background-color: #616161;">90%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa fa-desktop" aria-hidden="true"></i> <span>Web Design</span> 
+                            <div class="progress" style="height: 30px; background-color: #a9a9a9">
+                                <div class="progress-bar" style="width: 85%; background-color: #616161;">85%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa fa-photo" aria-hidden="true"></i> <span>Photoshop</span>
+                            <div class="progress" style="height: 30px; background-color: #a9a9a9">
+                                <div class="progress-bar" style="width: 75%; background-color: #616161;">75%</div>
+                            </div>
+                        </li>
                     </ul>
-                    <ul class="pricing-tier pricing-tier-pro">
-                        <li class=>Pro</li>
-                        <li><strong>25GB</strong> Storage</li>
-                        <li><strong>25</strong> Emails</li>
-                        <li><strong>25</strong> Domains</li>
-                        <li><strong>Endless</strong> Support</li>
-                        <li class="price"><strong>$25</strong> <br> <span>per month</span></li>
-                        <li><button class="dark-button">Sign Up</button></li>
-                    </ul>
-                    <ul class="pricing-tier">
-                        <li>Premium</li>
-                        <li><strong>50GB</strong> Storage</li>
-                        <li><strong>50</strong> Emails</li>
-                        <li><strong>50</strong> Domains</li>
-                        <li><strong>Endless</strong> Support</li>
-                        <li class="price"><strong>$50</strong> <br> <span>per month</span></li>
-                        <li><button class="dark-button">Sign Up</button></li>
-                    </ul>
-                <div>
-            </section>
+                </section>
 
-            <!-- Contact -->
-            <section class="contact" id="contact">
-                <h2>contact</h2>
-                <h6>Let's get in touch. Send us a message:</h6>
-                <p><i class="fa fa-map-marker medium-icon" aria-hidden="true"></i> <span class="contact-location">Chicago, US</span></p>
-                <p><i class="fa fa-phone medium-icon" aria-hidden="true"></i> <span class="contact-phone">+00 151515</span></p>
-                <p><i class="fa fa-envelope medium-icon" aria-hidden="true"></i> <span class="contact-email">mail@mail.com</span></li></p>
-                <form action="" method="get">
+                <!-- Pricing -->
+                <section class="pricing" id="pricing">
+                    <h2>pricing</h2>
+                    <h6>choose a pricing plan that fits your needs</h6>
+                    <div class="pricing-tiers">
+                        <ul class="pricing-tier">
+                            <li>Basic</li>
+                            <li><strong>10GB</strong> Storage</li>
+                            <li><strong>10</strong> Emails</li>
+                            <li><strong>10</strong> Domains</li>
+                            <li><strong>Endless</strong> Support</li>
+                            <li class="price"><strong>$10</strong> <br> <span>per month</span></li>
+                            <li><button class="dark-button">Sign Up</button></li>
+                        </ul>
+                        <ul class="pricing-tier pricing-tier-pro">
+                            <li class=>Pro</li>
+                            <li><strong>25GB</strong> Storage</li>
+                            <li><strong>25</strong> Emails</li>
+                            <li><strong>25</strong> Domains</li>
+                            <li><strong>Endless</strong> Support</li>
+                            <li class="price"><strong>$25</strong> <br> <span>per month</span></li>
+                            <li><button class="dark-button">Sign Up</button></li>
+                        </ul>
+                        <ul class="pricing-tier">
+                            <li>Premium</li>
+                            <li><strong>50GB</strong> Storage</li>
+                            <li><strong>50</strong> Emails</li>
+                            <li><strong>50</strong> Domains</li>
+                            <li><strong>Endless</strong> Support</li>
+                            <li class="price"><strong>$50</strong> <br> <span>per month</span></li>
+                            <li><button class="dark-button">Sign Up</button></li>
+                        </ul>
                     <div>
-                        <input class="contact-form-field" id="name" name="name" type="text" placeholder="Name" required>
-                    </div>
-                    <div>
-                        <input class="contact-form-field" id="email" name="email" type="email" placeholder="Email" required>
-                    </div>
-                    <div>
-                        <input class="contact-form-field" id="subject" name="subject" type="text" placeholder="Subject" required>
-                    </div>
-                    <div>
-                        <textarea class="contact-form-field message-form-field" id="message" name="message" placeholder="Message"></textarea>
-                    </div>
-                    <button class="dark-button"><i class="fa fa-paper-plane" aria-hidden="true"></i> SEND MESSAGE</button>
-                </form>
+                </section>
 
-                <!-- Map image -->
+                <!-- Contact -->
+                <section class="contact" id="contact">
+                    <h2>contact</h2>
+                    <h6>Let's get in touch. Send us a message:</h6>
+                    <p><i class="fa fa-map-marker medium-icon" aria-hidden="true"></i> <span class="contact-location">Chicago, US</span></p>
+                    <p><i class="fa fa-phone medium-icon" aria-hidden="true"></i> <span class="contact-phone">+00 151515</span></p>
+                    <p><i class="fa fa-envelope medium-icon" aria-hidden="true"></i> <span class="contact-email">mail@mail.com</span></li></p>
+                    <form action="" method="get">
+                        <div>
+                            <input class="contact-form-field" id="name" name="name" type="text" placeholder="Name" required>
+                        </div>
+                        <div>
+                            <input class="contact-form-field" id="email" name="email" type="email" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <input class="contact-form-field" id="subject" name="subject" type="text" placeholder="Subject" required>
+                        </div>
+                        <div>
+                            <textarea class="contact-form-field message-form-field" id="message" name="message" placeholder="Message"></textarea>
+                        </div>
+                        <button class="dark-button"><i class="fa fa-paper-plane" aria-hidden="true"></i> SEND MESSAGE</button>
+                    </form>
+
+                    <!-- Map image -->
+                    <div>
+                        <figure class="map">
+                            <img class="greyscale-75" src="https://www.w3schools.com/w3images/map.jpg" alt="A plan view map of a road junction.">
+                        </figure>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <a href="#home"><button class="light-button"><i class="fa fa-arrow-up" aria-hidden="true"></i> <span>To the top</span></button></a>
                 <div>
-                    <figure class="map">
-                        <img class="greyscale-75" src="https://www.w3schools.com/w3images/map.jpg" alt="A plan view map of a road junction.">
-                    </figure>
+                    <a href=""><i class="fa fa-facebook-official small-icon" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram small-icon" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-snapchat small-icon" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-pinterest small-icon" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter-square small-icon" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin-square small-icon" aria-hidden="true"></i></a>
                 </div>
-            </section>
-
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <button class="light-button"><a href="#home"><i class="fa fa-arrow-up" aria-hidden="true"></i> <span>To the top</span></a></button>
-            <div>
-                <i class="fa fa-facebook-official small-icon" aria-hidden="true"></i>
-                <i class="fa fa-instagram small-icon" aria-hidden="true"></i>
-                <i class="fa fa-snapchat small-icon" aria-hidden="true"></i>
-                <i class="fa fa-pinterest small-icon" aria-hidden="true"></i>
-                <i class="fa fa-twitter-square small-icon" aria-hidden="true"></i>
-                <i class="fa fa-linkedin-square small-icon" aria-hidden="true"></i>
-            </div>
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-        </footer>
-
+                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            </footer>
+        </div>
     </body>
 </html>
