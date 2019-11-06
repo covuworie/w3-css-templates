@@ -5,37 +5,34 @@
 }
 
 /* Text */
-body {
+.body {
     font-family: "Raleway", sans-serif;
-    font-size: 15px;
-    font-weight: 100;
+    font-size: 16px;
     line-height: 1.8;
 }
 
-h1 {
+.main-title {
     text-align: center;
+    font-size: 2.5em;
 }
 
-h2 {
+.large-title {
     text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 100;
     text-align: center;
     margin: 20px 0;
+    font-size: 1.5em;
 }
 
-h4 {
-    font-size: 24px;
-    font-weight: 100;
+.medium-title {
+    font-size: 1.4em;
     margin-left: 20px;
     margin-bottom: 20px;
 }
 
-h6 {
-    font-size: 18px;
-    font-weight: 100;
+.small-title {
     text-align: center;
     margin-bottom: 50px;
+    font-size: 1.2em;
 }
 
 p {
@@ -45,6 +42,21 @@ p {
 section,
 footer {
     padding: 100px 0;
+}
+
+/* Icons */
+.banner-icons {
+    position: absolute; /* w3 schools does this in a hacky way */
+    bottom: 30px;
+    left: 50px;
+}
+
+.banner-icons .small-icon {
+    color: #a9a9a9;
+}
+
+.icon-caption {
+    font-size: 1.1em;
 }
 
 /* Document and Main Grids */
@@ -90,7 +102,7 @@ footer {
 
 .banner {
     grid-area: banner;
-    height: 100vh;
+    height: 95vh;
     background-image: url("https://www.w3schools.com//w3images/mac.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -101,8 +113,6 @@ footer {
 
 .banner h1 {
     text-align: left;
-    font-size: 40px;
-    font-weight: normal;
     padding: 100px 0 50px 50px;
 }
 
@@ -161,10 +171,6 @@ footer {
     padding-bottom: 30px;
 }
 
-.big-icon {
-    font-size: 64px !important;
-}
-
 a {
     text-decoration: none;
     color: #000;
@@ -175,17 +181,15 @@ a {
     color: #000;  
 }
 
-.banner-icons .small-icon {
-    color: #a9a9a9;
-}
-
 img {
     width: 100%;
 }
 
 figcaption {
-    font-size: 24px;
     margin: 0 0 10px 20px;
+    padding-top: 10px;
+    font-size: 1.5rem;
+
 }
 
 .greyscale-75 {
@@ -200,6 +204,11 @@ figcaption {
     color: #fff;
 }
 
+.design .fa,
+.contact .fa {
+    color: #fff;
+}
+
 .dark-button:hover,
 .grey-button:hover,
 .light-button:hover {
@@ -208,13 +217,11 @@ figcaption {
 
 .dark-button > a {
     color: #fff;
-    font-size: 18px;
 }
 
 .light-button {
     background-color: #f5f5f5;
     color: #000;
-    font-size: 14px;
     margin-left: 15px;
     padding: 12px;
 }
@@ -223,12 +230,6 @@ figcaption {
     margin: 0 0 30px 50px;
     background-color: #a9a9a9;
     color: #000;
-}
-
-.banner-icons {
-    position: absolute; /* w3 schools does this in a hacky way */
-    bottom: 30px;
-    left: 50px;
 }
 
 /* Main Navigation */
@@ -241,19 +242,15 @@ figcaption {
 }
 
 .main-nav a {
-    margin-right: 20px;
     color: #000;
-    padding: 16px;
+    display: inline-block;
+    padding: 0.7em;
 }
 
 .main-nav a:hover {
     background-color: #d3d3d3;
     text-decoration: none;
     color: #000;
-}
-
-.header-brand {
-    margin-left: 20px;
 }
 
 /* Team Grid */
@@ -314,7 +311,7 @@ figcaption {
 }
 
 .stat-numbers span {
-    font-size: 36px;
+    font-size: 2.2em;
 }
 
 
@@ -375,13 +372,13 @@ figcaption {
 
 .pricing-tier li:nth-child(1) {
     background-color: #000;
-    font-size: 24px;
     color: #fff;
     padding: 30px;
+    font-size: 1.5em;
 }
 
 .pricing-tier-pro li:nth-child(1) {
-    background-color: #f44336 !important;
+    background-color: #f44336;
 }
 
 .pricing-tier li:last-child {
@@ -391,25 +388,17 @@ figcaption {
 
 .pricing-tier span {
     color: #616161;
-    font-size: 16px;
+    font-size: 0.6em;
 }
 
 .price {
     padding: 30px 30px 0 30px;
-    font-size: 24px;
+    font-size: 1.6em;
 }
 
 /* Contact */
-.contact p {
-    font-size: 18px;
-}
-
 .contact div {
     margin: 0 20px;
-}
-
-.medium-icon {
-    font-size: 36px !important;
 }
 
 /* Aligning the right space for icons to line up is a pain when they are of different widths. Ugly code, but it works. */
@@ -468,14 +457,10 @@ figcaption {
     padding: 20px 0px;
 }
 
-.small-icon {
-    font-size: 24px !important;
-}
-
 /* Medium Screen Styles */
 @media screen and (min-width: 600px){
-    .banner h1 {
-        font-size: 64px;
+    .banner .main-title {
+        font-size: 4em;
     }
 
     .key-features {
