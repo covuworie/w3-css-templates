@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    border: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -19,36 +19,31 @@
 .large-title {
     text-transform: uppercase;
     text-align: center;
-    margin: 20px 0;
     font-size: 1.5em;
+    margin-bottom: 1.2em;
 }
 
 .medium-title {
     font-size: 1.4em;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 1.2em;
 }
 
 .small-title {
     text-align: center;
-    margin-bottom: 50px;
     font-size: 1.2em;
+    margin-bottom: 3em;
 }
 
-p {
-    margin: 0 20px 20px;
-}
-
-section,
-footer {
-    padding: 100px 0;
+section
+{
+    padding: 10rem 0 10rem 0;
 }
 
 /* Icons */
 .banner-icons {
     position: absolute; /* w3 schools does this in a hacky way */
-    bottom: 30px;
-    left: 50px;
+    bottom: 2rem;
+    left: 2rem;
 }
 
 .banner-icons .small-icon {
@@ -57,6 +52,7 @@ footer {
 
 .icon-caption {
     font-size: 1.1em;
+    margin-top: 2rem;
 }
 
 /* Document and Main Grids */
@@ -65,7 +61,6 @@ footer {
     top: 0;
     width: 100%;
     background-color: #fff;
-    height: 50px;
     z-index: 1;
 }
 
@@ -76,18 +71,20 @@ footer {
     grid-template-areas:
         "main"
         "footer";
-    margin-top: 50px;
 }
 
 .footer {
     grid-area: footer;
+    background-color: #000;
+    text-align: center;
+    padding: 5em 0 3em 0;
 }
 
 .main {
     grid-area: main;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns:20px repeat(4, 1fr) 20px;
+    grid-template-columns:1rem repeat(4, 1fr) 1rem;
     grid-template-areas:
         "banner banner banner banner banner banner"
         ". about about about about ."
@@ -102,7 +99,7 @@ footer {
 
 .banner {
     grid-area: banner;
-    height: 95vh;
+    height: 100vh;
     background-image: url("https://www.w3schools.com//w3images/mac.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -113,12 +110,12 @@ footer {
 
 .banner h1 {
     text-align: left;
-    padding: 100px 0 50px 50px;
+    margin: 8rem 0 2rem 2rem;
 }
 
 .banner h6 {
     text-align: left;
-    padding: 0 0 30px 50px;
+    margin: 0 0 2rem 2rem;
 }
 
 .about {
@@ -167,8 +164,12 @@ footer {
     background-color: #f1f1f1;
 }
 
-.features > i {
-    padding-bottom: 30px;
+.design div {
+    margin: 0 2rem 0 2rem;
+}
+
+.design figure {
+    margin: 1rem 2rem 0 2rem;
 }
 
 a {
@@ -186,10 +187,8 @@ img {
 }
 
 figcaption {
-    margin: 0 0 10px 20px;
-    padding-top: 10px;
     font-size: 1.5rem;
-
+    margin-top: 0.5em;
 }
 
 .greyscale-75 {
@@ -199,13 +198,12 @@ figcaption {
 /* Buttons */
 .dark-button {
     background-color: #000;
-    padding: 12px;
-    margin-left: 20px;
     color: #fff;
+    padding: 0.5em;
 }
 
 .design .fa,
-.contact .fa {
+.contact .dark-button .fa {
     color: #fff;
 }
 
@@ -215,21 +213,17 @@ figcaption {
     background-color: #d3d3d3;
 }
 
-.dark-button > a {
-    color: #fff;
-}
-
 .light-button {
     background-color: #f5f5f5;
     color: #000;
-    margin-left: 15px;
-    padding: 12px;
+    padding: 0.5em;
 }
 
 .grey-button {
-    margin: 0 0 30px 50px;
     background-color: #a9a9a9;
     color: #000;
+    margin-left: 2rem;
+    padding: 1em;
 }
 
 /* Main Navigation */
@@ -238,7 +232,6 @@ figcaption {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    height: 50px;
 }
 
 .main-nav a {
@@ -247,7 +240,8 @@ figcaption {
     padding: 0.7em;
 }
 
-.main-nav a:hover {
+.main-nav a:hover
+{
     background-color: #d3d3d3;
     text-decoration: none;
     color: #000;
@@ -262,7 +256,7 @@ figcaption {
         "anja"
         "mike"
         "dan";
-    gap: 10px;
+    gap: 0.5em;
 }
 
 .john {
@@ -283,7 +277,6 @@ figcaption {
 
 .team-member {
     border: 3px solid #d3d3d3;
-    padding-bottom: 20px;
 }
 
 .team-member > :nth-child(2) {
@@ -291,15 +284,25 @@ figcaption {
 }
 
 .team-member button {
-    width: 90%;
+    width: 100%;
+    border: none;
+}
+
+.team-member figcaption,
+.team-member p {
+    margin: 1rem;
 }
 
 /* Stats */
+.stats
+{
+    padding: 3rem 0 3rem 0;
+}
+
 .stats,
 .pricing {
     background-color:#616161;
     color: #fff;
-    padding: 50px 0;
 }
 
 .stat-numbers {
@@ -328,52 +331,59 @@ figcaption {
         "camera"
         "typewriter"
         "tableturner";
-    gap: 10px;
+    gap: 1em;
+}
+
+.work-examples figure {
+    margin: 0; /* override the setting in _reboot.scss in bootstrap */ 
 }
 
 /* Skills */
+.skills {
+    padding: 5rem 0 5rem 0;
+}
+
 .skills > ul {
     padding: 0;
-    margin: 0 20px;
 }
 
 .skills li {
     list-style: none;
-    padding-bottom: 20px;
 }
 
 .skills i {
-    padding: 20px 20px 20px 0;
+    margin: 1.5em 1.5em 1.5em 0;
+}
+
+.skill {
+    margin: 0 2em 2em 2em;
 }
 
 /* Pricing */
 .pricing-tiers {
     display: flex;
     flex-flow: column nowrap;
+    padding: 0 2rem 0 2rem;
 }
 
 .pricing-tier {
-    margin: 0 30px 15px 30px;
     text-align: center;
     border: 1px solid #d3d3d3;
     background-color: #fff;
-}
-
-.pricing-tier {
+    margin: 0.5rem;
     list-style: none;
     padding: 0;
 }
 
 .pricing-tier li {
-    padding: 15px;
     border-bottom: 1px solid #d3d3d3;
     color: #000;
+    padding: 1em;
 }
 
 .pricing-tier li:nth-child(1) {
     background-color: #000;
     color: #fff;
-    padding: 30px;
     font-size: 1.5em;
 }
 
@@ -384,6 +394,7 @@ figcaption {
 .pricing-tier li:last-child {
     border-bottom: none;
     background-color:#f5f5f5;
+    padding: 1.5em;
 }
 
 .pricing-tier span {
@@ -392,58 +403,61 @@ figcaption {
 }
 
 .price {
-    padding: 30px 30px 0 30px;
     font-size: 1.6em;
 }
 
 /* Contact */
-.contact div {
-    margin: 0 20px;
+.contact > div {
+    margin: 0 2rem 1.2rem 2rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.5em;
+    resize: none;
+}
+
+.contact .dark-button {
+    margin-top: 0rem;
+}
+
+.contact form p:first-child {
+    margin-top: 3em;
 }
 
 /* Aligning the right space for icons to line up is a pain when they are of different widths. Ugly code, but it works. */
 .contact-location {
-    padding-left: 20px;
+    padding-left: 1.4em;
 }
 
 .contact-phone {
-    padding-left: 12px;
+    padding-left: 1em;
 }
 
 .contact-email {
-    padding-left: 8px;
-}
-
-.contact div {
-    margin-bottom: 10px;
+    padding-left: 0.7em;
 }
 
 .contact-form-field {
-    height: 40px;
     width: 100%;
-    padding: 10px;
 }
 
 .message-form-field {
-    height: 100px;
+    height: 5em;
 }
 
 .contact button {
-    margin-bottom: 50px;
+    margin: 1em 0 4em 0;
 }
 
 /* Footer */
-.footer {
-    background-color: #000;
-    text-align: center;
-}
-
-.footer p {
+.footer p,
+.footer div .fa {
     color: #fff;
 }
 
 .footer span {
-    padding-left: 10px;
+    padding-left: 0.5em;
 }
 
 .footer p a {
@@ -451,10 +465,8 @@ figcaption {
     text-decoration: underline;
 }
 
-
-.footer div .fa {
-    color: #fff;
-    padding: 20px 0px;
+.footer div {
+    margin: 2rem 0 2rem 0;
 }
 
 /* Medium Screen Styles */
@@ -475,10 +487,6 @@ figcaption {
 
     .skill {
         width: 50%;
-    }
-
-    .design p {
-        margin-right: 100px;
     }
 
     .team-members {
@@ -504,18 +512,20 @@ figcaption {
 
     .pricing-tiers {
         flex-flow: row nowrap;
-        padding: 5px;
     }
 
     /* I think using CSS Grid for "pricing-tier" boxes would have been better as you cannot use flex-grow on the cross-axis (vertical axis) to make the "pricing-tier-pro" box bigger than the others. */
     .pricing-tier {
         width: 100%;
-        margin: 10px;
     }
 }
 
 /* Larger Screen Styles */
 @media screen and (min-width: 1000px){
+    .design div {
+        margin-right: 15rem;
+    }
+
     .team-members {
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
