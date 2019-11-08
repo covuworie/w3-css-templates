@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-grey: #a9a9a9;
+    --color-hover-grey: #d3d3d3;
+    --color-dark-grey: #616161;
+    --color-light-grey: #f5f5f5;
+}
+
 /* Text */
 .body {
     font-family: "Raleway", sans-serif;
@@ -47,7 +56,7 @@ section
 }
 
 .banner-icons .small-icon {
-    color: #a9a9a9;
+    color: var(--color-grey);
 }
 
 .icon-caption {
@@ -60,7 +69,7 @@ section
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--color-white);
     z-index: 1;
 }
 
@@ -75,7 +84,7 @@ section
 
 .footer {
     grid-area: footer;
-    background-color: #000;
+    background-color: var(--color-black);
     text-align: center;
     padding: 5em 0 3em 0;
 }
@@ -105,7 +114,7 @@ section
     background-position: center;
     background-size: cover;
     filter: grayscale(50%);
-    color: #fff;
+    color: var(--color-white);
 }
 
 .banner h1 {
@@ -174,12 +183,12 @@ section
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--color-black);
 }
 
 /* Images */
 .fa {
-    color: #000;  
+    color: var(--color-black);
 }
 
 img {
@@ -197,31 +206,31 @@ figcaption {
 
 /* Buttons */
 .dark-button {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-black);
+    color: var(--color-white);
     padding: 0.5em;
 }
 
 .design .fa,
 .contact .dark-button .fa {
-    color: #fff;
+    color: var(--color-white);
 }
 
 .dark-button:hover,
 .grey-button:hover,
 .light-button:hover {
-    background-color: #d3d3d3;
+    background-color: var(--color-hover-grey);
 }
 
 .light-button {
-    background-color: #f5f5f5;
-    color: #000;
+    background-color: var(--color-light-grey);
+    color: var(--color-black);
     padding: 0.5em;
 }
 
 .grey-button {
-    background-color: #a9a9a9;
-    color: #000;
+    background-color: var(--color-grey);
+    color: var(--color-black);
     margin-left: 2rem;
     padding: 1em;
 }
@@ -235,16 +244,16 @@ figcaption {
 }
 
 .main-nav a {
-    color: #000;
+    color: var(--color-black);
     display: inline-block;
     padding: 0.7em;
 }
 
 .main-nav a:hover
 {
-    background-color: #d3d3d3;
+    background-color: var(--color-hover-grey);
     text-decoration: none;
-    color: #000;
+    color: var(--color-black);
 }
 
 /* Team Grid */
@@ -276,11 +285,11 @@ figcaption {
 }
 
 .team-member {
-    border: 3px solid #d3d3d3;
+    border: 3px solid var(--color-hover-grey);
 }
 
 .team-member > :nth-child(2) {
-    color: #a9a9a9;
+    color: var(--color-grey);
 }
 
 .team-member button {
@@ -301,8 +310,8 @@ figcaption {
 
 .stats,
 .pricing {
-    background-color:#616161;
-    color: #fff;
+    background-color: var(--color-dark-grey);
+    color: var(--color-white);
 }
 
 .stat-numbers {
@@ -368,22 +377,22 @@ figcaption {
 
 .pricing-tier {
     text-align: center;
-    border: 1px solid #d3d3d3;
-    background-color: #fff;
+    border: 1px solid var(--color-hover-grey);
+    background-color: var(--color-white);
     margin: 0.5rem;
     list-style: none;
     padding: 0;
 }
 
 .pricing-tier li {
-    border-bottom: 1px solid #d3d3d3;
-    color: #000;
+    border-bottom: 1px solid var(--color-hover-grey);
+    color: var(--color-black);
     padding: 1em;
 }
 
 .pricing-tier li:nth-child(1) {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-black);
+    color: var(--color-white);
     font-size: 1.5em;
 }
 
@@ -393,12 +402,12 @@ figcaption {
 
 .pricing-tier li:last-child {
     border-bottom: none;
-    background-color:#f5f5f5;
+    background-color: var(--color-light-grey);
     padding: 1.5em;
 }
 
 .pricing-tier span {
-    color: #616161;
+    color: var(--color-dark-grey);
     font-size: 0.6em;
 }
 
@@ -453,7 +462,7 @@ figcaption {
 /* Footer */
 .footer p,
 .footer div .fa {
-    color: #fff;
+    color: var(--color-white);
 }
 
 .footer span {
@@ -461,7 +470,7 @@ figcaption {
 }
 
 .footer p a {
-    color: #fff;
+    color: var(--color-white);
     text-decoration: underline;
 }
 
