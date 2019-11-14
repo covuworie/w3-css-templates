@@ -3,3 +3,137 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Main Grid */
+.main-grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1rem repeat(6, 1fr) 1rem;
+    grid-template-areas:
+        ". features features features features features features ."
+        ". color color color color color color ."
+        ". response response response response response response ."
+        ". containers containers containers containers containers containers ."
+        ". themes themes themes themes themes themes ."
+        ". cards cards cards cards cards cards ."
+        ". tables tables tables tables tables tables ."
+        ". forms forms forms forms forms forms ."
+        ". progress progress progress progress progress progress ."
+        ". slideshows slideshows slideshows slideshows slideshows slideshows ."
+        ". navigation navigation navigation navigation navigation navigation ."
+        ". accordians accordians accordians accordians accordians accordians ."
+        ". tabs tabs tabs tabs tabs tabs ."
+        ". buttons buttons buttons buttons buttons buttons ."
+        ". pagination pagination pagination pagination pagination pagination .";
+}
+
+/* Header */
+.header {
+    grid-area: header;
+}
+
+/* Features */
+.features {
+    grid-area: features;
+}
+
+/* Color Classes */
+.color {
+    grid-area: color;
+}
+
+/* Built-In Responsiveness */ 
+.response {
+    grid-area: response;
+}
+
+/* Containers */
+.containers {
+    grid-area: containers;
+}
+
+/* Color Themes */
+.themes {
+    grid-area: themes;
+}
+
+/* Cards */
+.cards {
+    grid-area: cards;
+}
+
+/* Tables */
+.tables {
+    grid-area: tables;
+}
+
+/* Forms and Lists */
+.forms {
+    grid-area: forms;
+}
+
+/* Progress Bars */
+.progress {
+    grid-area: progress;
+}
+
+/* Slideshows */
+.slideshows {
+    grid-area: slideshows;
+}
+
+/* Navigation */
+.navigation {
+    grid-area: navigation;
+}
+
+/* Accordians */
+.accordians {
+    grid-area: accordians;
+}
+
+/* Tabs */
+.tabs {
+    grid-area: tabs;
+}
+
+/* Buttons */
+.buttons {
+    grid-area: buttons;
+}
+
+/* Pagination */
+.pagination {
+    grid-area: pagination;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+}
+
+/* Larger Screen Styles */
+@media screen and (min-width: 600px){
+    /* Main Grid */
+    .main-grid {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1rem 1fr 1rem;
+        grid-template-areas:
+            ". features ."
+            ". color ."
+            ". response ."
+            ". containers ."
+            ". themes ."
+            ". cards ."
+            ". tables ."
+            ". forms ."
+            ". progress ."
+            ". slideshows ."
+            ". navigation ."
+            ". accordians ."
+            ". tabs ."
+            ". buttons ."
+            ". pagination .";
+    }
+}
