@@ -4,6 +4,33 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-dark-grey: #616161;
+    --font-weight: 400;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1, h4 {
+    text-align: center;
+    font-weight: var(--font-weight);
+    
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
 /* Main Grid */
 .main-grid {
     display: grid;
@@ -30,6 +57,39 @@
 /* Header */
 .header {
     grid-area: header;
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.header-main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header nav i {
+    margin: 0.5em;
+    padding: 0.7em;
+    cursor: pointer;
+}
+
+.header nav i:hover,
+.header button:hover {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.header-main button {
+    color: var(--color-white);
+    background-color: var(--color-dark-grey);
+    font-size: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: none;
+    padding: 0.5em;
+    margin-bottom: 2em;
+    cursor: pointer;
 }
 
 /* Features */
