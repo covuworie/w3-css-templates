@@ -9,6 +9,12 @@
     --color-white: #fff;
     --color-grey: #a9a9a9;
     --color-dark-grey: #616161;
+    --color-red: #f44336;
+    --color-blue: #2196F3;
+    --color-blue-grey: #607d8b;
+    --color-teal: #009688;
+    --color-yellow: #ffeb3b;
+    --color-orange: #ff9800;
     --font-weight: 400;
 }
 
@@ -33,6 +39,10 @@ h1 {
     font-size: 3em;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 h3 {
     font-size: 1.5em;
 }
@@ -51,6 +61,10 @@ ul li {
 
 .fa {
     margin: 1rem;
+}
+
+p {
+    padding: 1em;
 }
 
 /* Main Grid */
@@ -136,6 +150,38 @@ ul li {
 /* Color Classes */
 .color {
     grid-area: color;
+}
+
+.color-grid {
+    display: flex;
+    flex-flow: column nowrap;
+    color: var(--color-white);
+}
+
+.color-red {
+    background-color: var(--color-red);
+}
+
+.color-blue {
+    background-color: var(--color-blue);
+}
+
+.color-blue-grey {
+    background-color: var(--color-blue-grey);
+}
+
+.color-teal {
+    background-color: var(--color-teal);
+}
+
+.color-yellow {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+}
+
+.color-orange {
+    background-color: var(--color-orange);
+    color: var(--color-black);
 }
 
 /* Built-In Responsiveness */ 
@@ -246,4 +292,14 @@ ul li {
     .feature:last-child {
         margin-right: 0;
     }
+
+    /* Color Classes */
+    .color-grid {
+        flex-flow: row nowrap;
+    }
+
+    .color-grid > div {
+        width: 100%;
+    }
 }
+
