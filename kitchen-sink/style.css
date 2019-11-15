@@ -7,28 +7,50 @@
 :root {
     --color-black: #000;
     --color-white: #fff;
+    --color-grey: #a9a9a9;
     --color-dark-grey: #616161;
     --font-weight: 400;
 }
 
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
+html, body {
+    font-family: "Verdana", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
-h1, h4 {
+section {
+    margin-top: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
     text-align: center;
     font-weight: var(--font-weight);
-    
+    margin: 1rem 0;  
 }
 
 h1 {
     font-size: 3em;
-    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
 }
 
 h4 {
     font-size: 1.2em;
-    margin-bottom: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    line-height: 3em;
+}
+
+.fa {
+    margin: 1rem;
 }
 
 /* Main Grid */
@@ -95,6 +117,20 @@ h4 {
 /* Features */
 .features {
     grid-area: features;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.feature {
+    padding-bottom: 5em;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
+                0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.large-icon {
+    font-size: 8rem !important;
 }
 
 /* Color Classes */
@@ -195,5 +231,19 @@ h4 {
             ". tabs ."
             ". buttons ."
             ". pagination .";
+    }
+
+    /* Features */
+    .features {
+        flex-flow: row nowrap;
+    }
+    
+    .feature {
+        width: 33.33%;
+        margin-right: 1em;
+    }
+
+    .feature:last-child {
+        margin-right: 0;
     }
 }
