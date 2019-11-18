@@ -9,12 +9,14 @@
     --color-white: #fff;
     --color-grey: #a9a9a9;
     --color-dark-grey: #616161;
+    --color-border-grey: #ccc;
     --color-red: #f44336;
     --color-blue: #2196F3;
     --color-blue-grey: #607d8b;
     --color-teal: #009688;
     --color-yellow: #ffeb3b;
     --color-orange: #ff9800;
+    --color-green: #4CAF50;
     --font-weight: 400;
 }
 
@@ -189,6 +191,27 @@ p {
     grid-area: response;
 }
 
+.border {
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid var(--color-border-grey);
+    margin-bottom: 1.5em;
+}
+
+.response div:nth-child(1)
+{
+    color: var(--color-white);
+}
+
+.first-p-center
+{
+    text-align: center;
+}
+
+.color-green {
+    background-color: var(--color-green);
+}
+
 /* Containers */
 .containers {
     grid-area: containers;
@@ -300,6 +323,29 @@ p {
 
     .color-grid > div {
         width: 100%;
+    }
+
+    /* Built-In Responsiveness */ 
+    .border {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .response div:nth-child(1)
+    {
+        border-right: 1px solid var(--color-border-grey);
+    }
+    
+    .w3-half {
+        width: 50%;
+    }
+    
+    .w3-third {
+        width: 33.33%;
+    }
+    
+    .w3-quarter {
+        width: 25%;
     }
 }
 
