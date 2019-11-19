@@ -145,7 +145,8 @@ p {
 }
 
 .feature,
-.theme {
+.theme,
+.card {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
                 0 2px 10px 0 rgba(0,0,0,0.12);
 }
@@ -303,6 +304,19 @@ p {
     grid-area: cards;
 }
 
+.paper-cards {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card {
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+}
+
 /* Tables */
 .tables {
     grid-area: tables;
@@ -436,6 +450,20 @@ p {
 
     .themes div:last-child
     {
+        margin-right: 0;
+    }
+
+    /* Cards */
+    .paper-cards {
+        flex-flow: row nowrap;
+    }
+    
+    .card {
+        width: 33.33%;
+        margin-right: 1rem;
+    }
+
+    .paper-cards div:last-child {
         margin-right: 0;
     }
 }
