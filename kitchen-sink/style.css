@@ -17,6 +17,7 @@
     --color-yellow: #ffeb3b;
     --color-orange: #ff9800;
     --color-green: #4CAF50;
+    --color-indigo: #3f51b5;
     --font-weight: 400;
 }
 
@@ -143,8 +144,8 @@ p {
     text-align: center;
 }
 
-.feature {
-    padding-bottom: 5em;
+.feature,
+.theme {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
                 0 2px 10px 0 rgba(0,0,0,0.12);
 }
@@ -253,6 +254,48 @@ p {
 /* Color Themes */
 .themes {
     grid-area: themes;
+}
+
+.themes h3 {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.color-themes {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.theme li {
+    border-bottom: 1px solid var(--color-border-grey);
+    width: 100%;
+    display: inline-block;
+}
+
+.theme li:first-of-type,
+.theme li:last-of-type {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.theme li:last-of-type {
+    border-bottom: none;
+    text-align: right;
+    padding: 0.2rem 1rem 0.2rem 0;
+    font-size: 1.2em;
+}
+
+.theme-indigo li:first-of-type, 
+.theme-indigo li:last-of-type{
+    background-color: var(--color-indigo);
+}
+
+.theme-indigo li:nth-child(2){
+    color: var(--color-indigo);
+}
+
+.theme ul li {
+    line-height: 1.5rem;
 }
 
 /* Cards */
@@ -379,6 +422,21 @@ p {
     
     .w3-quarter {
         width: 25%;
+    }
+
+    /* Color Themes */
+    .color-themes {
+        flex-flow: row nowrap;
+    }
+
+    .theme {
+        width: 50%;
+        margin-right: 1rem;
+    }
+
+    .themes div:last-child
+    {
+        margin-right: 0;
     }
 }
 
