@@ -432,6 +432,14 @@ p {
     grid-area: progress;
 }
 
+.progress button {
+    margin-top: 1em;
+}
+
+.progress button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
 /* Slideshows */
 .slideshows {
     grid-area: slideshows;
@@ -455,6 +463,15 @@ p {
 /* Buttons */
 .buttons {
     grid-area: buttons;
+}
+
+button {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 1.1em;
+    padding: 0.5em 0.7em;
+    border: none;
+    cursor: pointer;
 }
 
 /* Pagination */
