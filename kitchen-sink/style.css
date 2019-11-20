@@ -445,6 +445,12 @@ p {
     grid-area: slideshows;
 }
 
+.slideshows img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
 /* Navigation */
 .navigation {
     grid-area: navigation;
