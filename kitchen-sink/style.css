@@ -19,6 +19,7 @@
     --color-green: #4CAF50;
     --color-indigo: #3f51b5;
     --font-weight: 400;
+    --border : 1px solid var(--color-border-grey);
 }
 
 html, body {
@@ -147,7 +148,9 @@ p {
 .feature,
 .theme,
 .card,
-.tables table {
+.tables table,
+.form,
+.lists {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
                 0 2px 10px 0 rgba(0,0,0,0.12);
 }
@@ -201,7 +204,7 @@ p {
 .border {
     display: flex;
     flex-flow: column nowrap;
-    border: 1px solid var(--color-border-grey);
+    border: var(--border);
     margin-bottom: 1.5em;
 }
 
@@ -269,7 +272,7 @@ p {
 }
 
 .theme li {
-    border-bottom: 1px solid var(--color-border-grey);
+    border-bottom: var(--border);
     width: 100%;
     display: inline-block;
 }
@@ -343,13 +346,85 @@ p {
 
 .table td {
     padding: 0.8em;
-    border-bottom: 1px solid var(--color-border-grey);
+    border-bottom: var(--border);
 }
 
 
 /* Forms and Lists */
 .forms {
     grid-area: forms;
+}
+
+.forms-lists {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.form,
+.lists {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.form h2,
+.lists h2 {
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.list-1 {
+    margin-bottom: 2.5em;
+}
+
+.list-2 {
+    border: var(--border);
+    margin-bottom: 1.5em;
+}
+
+.list-1 li {
+    border-bottom: var(--border);
+    width: 100%;
+    padding-left: 1em;
+}
+
+.list-2 li {
+    border-bottom: var(--border);
+    width: 100%;
+    padding-left: 1em;
+}
+
+.list-2 li:last-child {
+    border-bottom: none;
+}
+
+.list-2 li:first-child {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+#input-form-name,
+#input-form-email,
+#input-form-subject {
+    display: block;
+    border: none;
+    border-bottom: var(--border);
+    width: 100%;
+}
+
+/* Apparently resizing checkboxes and radio button is difficult to do cross-browser. Need to investigate the best way of doing this without writing tonnes of code that doesn't work in some browsers. */
+/* .form input[type="checkbox"],
+.form input[type="radio"] {
+    width: 2em;
+    height: 2em;
+} */
+
+.input-personal {
+    margin-bottom: 2.5em;
+}
+
+.gender {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
 }
 
 /* Progress Bars */
@@ -448,7 +523,7 @@ p {
 
     .response div:nth-child(1)
     {
-        border-right: 1px solid var(--color-border-grey);
+        border-right: var(--border);
     }
     
     .w3-half {
@@ -490,6 +565,20 @@ p {
 
     .paper-cards div:last-child {
         margin-right: 0;
+    }
+
+    /* Forms and Lists */
+    .forms-lists {
+        flex-flow: row nowrap;
+    }
+
+    .form,
+    .lists {
+        width: 50%;
+    }
+
+    .form {
+        margin-right: 1rem;
     }
 }
 

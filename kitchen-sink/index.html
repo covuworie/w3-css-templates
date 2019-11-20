@@ -243,59 +243,63 @@
             
             <!--Forms and Lists -->
             <section class="forms">
-                <form action="" method="get">
-                    <h2>Forms and Lists</h2>
-                    <h2>Input Form</h2>
-                    <div>
-                        <input id="input-form-name" type="text" name="input-form-name" required>
-                        <label>Name</label>
+                <h2>Forms and Lists</h2>
+                <div class="forms-lists">
+                    <form class="form" action="" method="get">
+                        <h2>Input Form</h2>
+                        <div class="input-personal">
+                            <input id="input-form-name" type="text" name="input-form-name" required>
+                            <label for="input-form-name">Name</label>
+                        </div>
+                        <div class="input-personal">
+                            <input id="input-form-email" type="email" name="input-form-email" required>
+                            <label for="input-form-email">Email</label>
+                        </div>
+                        <div class="input-personal">
+                            <input id="input-form-subject" type="text" name="input-form-subject" required>
+                            <label for="input-form-subject">Subject</label>
+                        </div>
+                        <div>
+                            <input id="input-form-milk" type="checkbox" checked>
+                            <label for="input-form-milk">Milk</label>
+                        </div>
+                        <div>
+                            <input id="input-form-sugar" type="checkbox">
+                            <label for="input-form-sugar">Sugar</label>
+                        </div>
+                        <div>
+                            <input id="input-form-lemon" type="checkbox" disabled>
+                            <label for="input-form-lemon">Lemon (Disabled)</label>
+                        </div>
+                        <div class="gender">
+                            <div>
+                                <input id="input-form-male" name="gender" value="male" type="radio">
+                                <label for="input-form-male">Male</label>
+                            </div>
+                            <div>
+                                <input id="input-form-female" name="gender" value="female" type="radio">
+                                <label for="input-form-female">Female</label>
+                            </div>
+                            <div>
+                                <input id="input-form-unknown" name="gender" value="unknown" type="radio" disabled>
+                                <label for="input-form-unknown">Don't know (Disabled)</label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="lists">
+                        <h2>Lists</h2>
+                        <ul class="list-1">
+                            <li>Jill</li>
+                            <li>Eve</li>
+                            <li>Adam</li>
+                        </ul>
+                        <ul class="list-2">
+                            <li>Jill</li>
+                            <li>Eve</li>
+                            <li>Adam</li>
+                            <li>Steve</li>
+                        </ul>
                     </div>
-                    <div>
-                        <input id="input-form-email" type="email" name="input-form-email" required>
-                        <label for="input-form-email">Email</label>
-                    </div>
-                    <div>
-                        <input id="input-form-subject" type="text" name="input-form-subject" required>
-                        <label for="input-form-subject">Subject</label>
-                    </div>
-                    <div>
-                        <input id="input-form-milk" type="checkbox" checked>
-                        <label for="input-form-milk">Milk</label>
-                    </div>
-                    <div>
-                        <input id="input-form-sugar" type="checkbox">
-                        <label for="input-form-sugar">Sugar</label>
-                    </div>
-                    <div>
-                        <input id="input-form-lemon" type="checkbox" disabled>
-                        <label for="input-form-lemon">Lemon (Disabled)</label>
-                    </div>
-                    <div>
-                        <input id="input-form-male" name="gender" value="male" type="radio">
-                        <label for="input-form-male">Male</label>
-                    </div>
-                    <div>
-                        <input id="input-form-female" name="gender" value="female" type="radio">
-                        <label for="input-form-female">Female</label>
-                    </div>
-                    <div>
-                        <input id="input-form-unknown" name="gender" value="unknown" type="radio" disabled>
-                        <label for="input-form-unknown">Don't know (Disabled)</label>
-                    </div>
-                </form>
-                <div>
-                    <h2>Lists</h2>
-                    <ul>
-                        <li>Jill</li>
-                        <li>Eve</li>
-                        <li>Adam</li>
-                    </ul>
-                    <ul>
-                        <li>Jill</li>
-                        <li>Eve</li>
-                        <li>Adam</li>
-                        <li>Steve</li>
-                    </ul>
                 </div>
             </section>
 
