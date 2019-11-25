@@ -75,6 +75,11 @@ p {
     padding: 1rem;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
 /* Main Grid */
 .main-grid {
     display: grid;
@@ -119,9 +124,14 @@ p {
 }
 
 .header nav i:hover,
-.header button:hover {
+.header button:hover,
+.navigation nav > a:hover,
+.navigation div > a:hover,
+.dropdown-content li:hover
+{
     color: var(--color-black);
-    background-color: var(--color-white);
+    background-color: var(--color-border-grey);
+    cursor: pointer;
 }
 
 .header-main button {
@@ -150,7 +160,8 @@ p {
 .card,
 .tables table,
 .form,
-.lists {
+.lists,
+.dropdown-content {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
                 0 2px 10px 0 rgba(0,0,0,0.12);
 }
@@ -454,6 +465,36 @@ p {
 /* Navigation */
 .navigation {
     grid-area: navigation;
+}
+
+.navigation nav {
+    background-color: var(--color-black);
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+/* https://stackoverflow.com/questions/42632251/how-do-i-prevent-my-drop-down-from-stretching-the-navigation-bar */
+.dropdown-content {
+    position: relative;
+    width: 9.9em;
+    display: none;
+    background-color: var(--color-white);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+}
+
+.dropdown-content a {
+    color: var(--color-black);
+}
+
+.navigation a {
+    display: inline;
+    padding: 0.95em;
 }
 
 /* Accordians */
