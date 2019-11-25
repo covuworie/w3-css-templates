@@ -127,7 +127,9 @@ a {
 .header button:hover,
 .navigation nav > a:hover,
 .navigation div > a:hover,
-.dropdown-content li:hover
+.dropdown-content li:hover,
+.accordian summary:hover,
+.accordian a:hover
 {
     color: var(--color-black);
     background-color: var(--color-border-grey);
@@ -500,6 +502,28 @@ a {
 /* Accordians */
 .accordians {
     grid-area: accordians;
+}
+
+.accordian summary,
+.accordian img,
+.accordian figcaption {
+    padding: 0.95em;
+}
+
+.accordian summary,
+.accordian-section-3 {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.accordian a {
+    display: block;
+    color: var(--color-black);
+    padding: 0.95em;
+}
+
+.accordian img {
+    width: 30%;
 }
 
 /* Tabs */
