@@ -129,7 +129,8 @@ a {
 .navigation div > a:hover,
 .dropdown-content li:hover,
 .accordian summary:hover,
-.accordian a:hover
+.accordian a:hover,
+.tab button:hover
 {
     color: var(--color-black);
     background-color: var(--color-border-grey);
@@ -529,6 +530,27 @@ a {
 /* Tabs */
 .tabs {
     grid-area: tabs;
+}
+
+.tabs h2 {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.tabs > div {
+    border: var(--border);
+}
+
+.tab {
+    background-color: var(--color-black);
+}
+
+.tab button {
+    padding: 0.95em;
+}
+
+.tabs p {
+    padding-top: 0;
 }
 
 /* Buttons */
