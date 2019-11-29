@@ -608,6 +608,25 @@ button {
 /* Footer */
 .footer {
     grid-area: footer;
+    padding: 1em;
+}
+
+.footer h3 {
+    text-align: left;
+    padding-left: 0.95rem;
+}
+
+.powered {
+    display: flex;
+    justify-content: space-between;
+}
+
+.w3-css {
+    text-decoration: underline;
+}
+
+.footer p {
+    padding-top: 0;
 }
 
 /* Larger Screen Styles */
