@@ -11,7 +11,7 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="header">
+        <header class="header white-on-black">
             <nav>
                 <i class="fa fa-bars fa-lg"></i>
                 <!-- Should hold links when I learn javascript -->
@@ -170,7 +170,7 @@
                     </div>
                     <div class="theme border">
                         <ul>
-                            <li>
+                            <li class="white-on-black">
                                 <h3>Theme</h3>
                             </li>
                             <li>
@@ -188,7 +188,7 @@
                                 <h3>The Avengers</h3>
                                 <p>A huge success for Marvel and Disney</p>
                             </li>
-                            <li>Next</li>
+                            <li class="white-on-black">Next</li>
                         </ul>
                     </div>
                 </div>
@@ -219,9 +219,9 @@
                 <p class="first-p-center">Don't worry. W3.CSS takes care of your tables.</p>
                 <table class="table">
                     <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Points</th>
+                        <th class="white-on-black">First Name</th>
+                        <th class="white-on-black">Last Name</th>
+                        <th class="white-on-black">Points</th>
                     </tr>    
                     <tr>
                         <td>Jill</td>
@@ -294,7 +294,7 @@
                             <li>Adam</li>
                         </ul>
                         <ul class="list-2">
-                            <li>Jill</li>
+                            <li class="white-on-black">Jill</li>
                             <li>Eve</li>
                             <li>Adam</li>
                             <li>Steve</li>
@@ -310,7 +310,7 @@
                     <div style="height: 2.5em; width: 5%; background-color: #000; color: #fff; text-align: center; padding-top: 0.5em;">5%</div>
                 </div>
                 <!-- Should animate when I learn javascript -->
-                <button>Click Me</button>
+                <button class="white-on-black">Click Me</button>
             </section>
 
             <!-- Slideshows -->
@@ -323,7 +323,7 @@
             <!-- Navigation -->
             <section class="navigation">
                 <h2>Navigation</h2>
-                <nav>
+                <nav class="white-on-black">
                     <a href="index.html">Home</a>
                     <a href="#">Link 1</a>
                     <div class="dropdown">
@@ -342,16 +342,16 @@
                 <h2>Accordians</h2>
                 <!-- Use details here instead of javascript -->
                 <details class="accordian">
-                    <summary>Open Section 1</summary>
+                    <summary class="white-on-black">Open Section 1</summary>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
                 </details>
                 <details class="accordian">
-                    <summary>Open Section 2</summary>
+                    <summary class="white-on-black">Open Section 2</summary>
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>
                 </details>
-                <details class="accordian accordian-section-3">
+                <details class="accordian white-on-black">
                     <summary>Open Section 3</summary>
                     <p>Accordian with Images:</p>
                     <figure>
@@ -365,10 +365,10 @@
             <section class="tabs">
                 <h2>Tabs</h2>
                 <div>
-                    <div class="tab">
-                        <button>London</button>
-                        <button>Paris</button>
-                        <button>Tokyo</button>
+                    <div class="white-on-black">
+                        <button class="white-on-black">London</button>
+                        <button class="white-on-black">Paris</button>
+                        <button class="white-on-black">Tokyo</button>
                     </div>
                     <!-- Don't know javascript yet -->
                     <div>
@@ -383,39 +383,41 @@
             <section class="buttons">
                 <h2>Buttons</h2>
                 <div>
-                    <button>Button</button>
-                    <button>Button</button>
-                    <button>Button</button>
+                    <button class="button white-on-black">Button</button>
+                    <button class="button white-on-black">Button</button>
+                    <button class="button-disabled white-on-black" disabled>Button</button>
                 </div>
                 <div>
-                    <button>+</button>
-                    <button>+</button>
-                    <button>+</button>
+                    <button class="button circle-button white-on-black"><i class="fa fa-plus "></i></button>
+                    <button class="button circle-button white-on-black"><i class="fa fa-plus "></i></button>
+                    <button class="circle-button black-on-white white-button"><i class="fa fa-plus"></i></button>
                 </div>
-                <ul>
-                    <li>Dropdown <i class="fa fa-caret-down"></i></li>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul> 
+                <div class="dropdown">
+                    <a>Dropdown <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </div>  
             </section>
 
             <!-- Pagination -->
             <section class="pagination">
                 <h2>Pagination</h2>
-                <a href="#"><button>«</button></a>
-                <a href="#"><button>1</button></a>
-                <a href="#"><button>2</button></a>
-                <a href="#"><button>3</button></a>
-                <a href="#"><button>4</button></a>
-                <a href="#"><button>5</button></a>
-                <a href="#"><button>»</button></a>
+                <a href="#" ><button class="black-on-white">«</button></a>
+                <a href="#"><button class="white-on-black">1</button></a>
+                <a href="#"><button class="black-on-white">2</button></a>
+                <a href="#"><button class="black-on-white">3</button></a>
+                <a href="#"><button class="black-on-white">4</button></a>
+                <a href="#"><button class="black-on-white">5</button></a>
+                <a href="#"><button class="black-on-white">»</button></a>
             </section>
             
         </main>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer white-on-black">
             <h3>Footer</h3>
             <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
             <button>Go To Top</button>
