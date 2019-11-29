@@ -18,6 +18,7 @@
     --color-orange: #ff9800;
     --color-green: #4CAF50;
     --color-indigo: #3f51b5;
+    --color-hr: #eee;
     --font-weight: 400;
     --border : 1px solid var(--color-border-grey);
 }
@@ -78,6 +79,11 @@ p {
 a {
     text-decoration: none;
     color: var(--color-white);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--color-hr);
 }
 
 .white-on-black {
