@@ -591,6 +591,20 @@ button {
     grid-area: pagination;
 }
 
+.pagination div {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.pagination button {
+    margin: -0.2em;
+}
+
+.pagination button:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
 /* Footer */
 .footer {
     grid-area: footer;
