@@ -17,13 +17,20 @@
             <!-- Main navigation -->
             <nav class="main-nav">
                 <a class="header-brand" href="index.html" id="home">LOGO</a>
-                <!-- I don't know javascript yet so ignore the hamburger icon on small screens for now. -->
                 <div>
                     <a href="#about">ABOUT</a>
                     <a href="#team"><i class="fa fa-users" aria-hidden="true"></i> TEAM</a>
                     <a href="#work"><i class="fa fa-th" aria-hidden="true"></i> WORK</a>
                     <a href="#pricing"><i class="fa fa-usd" aria-hidden="true"></i> PRICING</a>
                     <a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> CONTACT</a>
+                </div>
+                <a href="#" class="hamburger" onclick="toggleMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <div class="side-menu">
+                    <a href="#about" onclick="sideMenuClose()">ABOUT</a>
+                    <a href="#team" onclick="sideMenuClose()">TEAM</a>
+                    <a href="#work" onclick="sideMenuClose()">WORK</a>
+                    <a href="#pricing" onclick="sideMenuClose()">PRICING</a>
+                    <a href="#contact" onclick="sideMenuClose()">CONTACT</a>
                 </div>
             </nav>
         </header>
@@ -294,4 +301,5 @@
             </footer>
         </div>
     </body>
+    <script src="js/menu.js"></script>
 </html>

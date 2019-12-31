@@ -256,6 +256,31 @@ figcaption {
     color: var(--color-black);
 }
 
+.main-nav div {
+    display: none;
+}
+
+.main-nav .side-menu {
+    position: fixed;
+    top: 0;
+    left: -40vw;
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: 1000;
+    background-color: var(--color-black);
+    height: 100vh;
+    width: 40vw;
+    transition: all ease-in-out 0.2s;
+}
+
+.main-nav .side-menu a {
+    color: var(--color-white);
+}
+
+.main-nav .side-menu a:hover {
+    color: var(--color-black);
+}
+
 /* Team Grid */
 .team-members {
     display: grid;
@@ -480,6 +505,18 @@ figcaption {
 
 /* Medium Screen Styles */
 @media screen and (min-width: 600px){
+    .main-nav div {
+        display: flex;
+    }
+
+    .main-nav .hamburger {
+        display: none;
+    }
+
+    .main-nav .side-menu {
+        display: none;
+    }
+
     .banner .main-title {
         font-size: 4em;
     }
