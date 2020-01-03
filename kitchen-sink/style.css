@@ -542,10 +542,15 @@ hr {
 
 .tabs button {
     padding: 0.95em;
+    margin-right: -5px;
 }
 
 .tabs p {
     padding-top: 0;
+}
+
+.active-city {
+    background-color: var(--color-dark-grey);
 }
 
 /* Buttons */

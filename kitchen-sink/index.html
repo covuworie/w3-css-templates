@@ -377,16 +377,26 @@
                 <h2>Tabs</h2>
                 <div>
                     <div class="white-on-black">
-                        <button class="white-on-black">London</button>
-                        <button class="white-on-black">Paris</button>
-                        <button class="white-on-black">Tokyo</button>
+                        <button id="btn-london" class="white-on-black active-city" onclick="toggleCity(this.id)">London</button>
+                        <button id="btn-paris" class="white-on-black" onclick="toggleCity(this.id)">Paris</button>
+                        <button id="btn-toyko" class="white-on-black" onclick="toggleCity(this.id)">Tokyo</button>
                     </div>
-                    <!-- Don't know javascript yet -->
-                    <div>
+                    <div class="city-tab"></div>
+                    <template class="city-london">
                         <h2>London</h2>
                         <p>London is the capital city of England.</p>
                         <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    </div>
+                    </template>
+                    <template class="city-paris">
+                        <h2>Paris</h2>
+                        <p>Paris is the capital of France.</p>
+                        <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+                    </template>
+                    <template class="city-toyko">
+                        <h2>Tokyo</h2>
+                        <p>Tokyo is the capital of Japan.</p>
+                        <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+                    </template>
                 </div>
             </section>
 
@@ -428,7 +438,7 @@
                     <a href="#"><button class="black-on-white">»</button></a>
                 </div>
             </section>
-            
+
         </main>
 
         <!-- Footer -->
@@ -440,4 +450,5 @@
             </div>
             <p>Remember to check out our <a href="https://www.w3schools.com/w3css/w3css_references.asp" target="_blank"><button>W3.CSS Reference</button></a></p>
         </footer>
+        <script src="js/main.js"></script>
     </body>
