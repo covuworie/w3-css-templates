@@ -51,3 +51,24 @@ let slideImage = function(className) {
     newImageUrl = imagesURL + images[newImageIndex];
     currentImageNode.setAttribute("src", newImageUrl);
 }
+
+// Progess bar
+let i = 0;
+let animateProgressBar = function() {
+    if (i == 0) {
+        i = 1;
+        var bar = document.querySelector(".progress-bar");
+        var width = 5;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+                i = 0;
+            } else {
+                width++;
+                bar.style.width = width + "%";
+                bar.innerHTML = width + "%";
+            }
+        }
+    }
+}
