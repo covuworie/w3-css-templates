@@ -1,3 +1,4 @@
+// Tabs
 let cityTab = document.querySelector(".city-tab");
 let city = document.querySelector(".city-london");
 cityTab.innerHTML = city.innerHTML;
@@ -20,4 +21,33 @@ let toggleCity = function(clickedId) {
     activeBtn.className = activeBtn.className.replace(" active-city", "");
     activeBtn = document.querySelector("#" + clickedId);
     activeBtn.className += " active-city";
+}
+
+// Slideshow
+let slideImage = function(className) {
+    imagesURL = "https://www.w3schools.com/w3images/";
+    images = ["snow.jpg", "lights.jpg", "mountains.jpg", "forest.jpg"];
+
+    currentImageNode = document.querySelector(".slideshow img");
+    currentImageUrl = currentImageNode.getAttribute("src");
+    currentImageUrlParts = currentImageUrl.split(imagesURL);
+    imageName = currentImageUrlParts[1]
+    currentImageIndex = images.indexOf(imageName);
+
+    if(className == "slide-left") {
+        newImageIndex = currentImageIndex - 1;
+        if(newImageIndex < 0) {
+            newImageIndex = images.length - 1;
+        }
+        
+    }
+    else if(className == "slide-right") {
+        newImageIndex = currentImageIndex + 1;
+        if(newImageIndex > images.length - 1) {
+            newImageIndex = 0;
+        }
+    }
+
+    newImageUrl = imagesURL + images[newImageIndex];
+    currentImageNode.setAttribute("src", newImageUrl);
 }

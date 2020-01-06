@@ -323,9 +323,13 @@
             <!-- Slideshows -->
             <section class="slideshows">
                 <hr>
-                <!-- Should be a slideshow when I learn javascript -->
                 <h2>Slideshows</h2>
-                <img src="https://www.w3schools.com/w3images/snow.jpg" alt="slideshow images">
+                <div class="slideshow">
+                    <button class="slide-left" onclick="slideImage(this.className)"><</button>
+                    <button class="slide-right" onclick="slideImage(this.className)">></button>
+                    <img src="https://www.w3schools.com/w3images/snow.jpg" alt="snow">
+                </div>
+                
             </section>
 
             <!-- Navigation -->

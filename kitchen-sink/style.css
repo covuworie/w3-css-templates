@@ -470,8 +470,39 @@ hr {
 
 .slideshows img {
     display: block;
+    width: 100%;
+}
+
+.slideshow {
+    position: relative;
+    max-width: 800px;
     margin: 0 auto;
-    width: 70%;
+}
+
+.slide-left {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    background-color: transparent;
+}
+
+.slide-right {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    background-color: transparent;
+}
+
+.slide-left:hover,
+.slide-right:hover
+{
+    color: var(--color-white);
+    background-color: var(--color-dark-grey);
+}
+
+.slide-left:focus,
+.slide-right:focus {
+    outline: none;
 }
 
 /* Navigation */
@@ -754,4 +785,3 @@ button {
         margin-right: 1rem;
     }
 }
-
