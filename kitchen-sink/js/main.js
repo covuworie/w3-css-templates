@@ -72,3 +72,14 @@ let animateProgressBar = function() {
         }
     }
 }
+
+// Modal dialog
+let showModal = function() {
+    modal = document.querySelector(".modal");
+    modal.style.display = "block";
+}
+
+let closeModal = function() {
+    modal = document.querySelector(".modal");
+    modal.style.display = "none";
+}

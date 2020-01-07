@@ -9,6 +9,7 @@
     --color-white: #fff;
     --color-grey: #a9a9a9;
     --color-dark-grey: #616161;
+    --color-deep-grey: #383838;
     --color-border-grey: #ccc;
     --color-red: #f44336;
     --color-blue: #2196F3;
@@ -146,7 +147,9 @@ hr {
 .accordian a:hover,
 .tabs button:hover,
 .button:hover,
-.white-button:hover
+.white-button:hover,
+.close-modal:hover,
+.close-modal:focus
 {
     color: var(--color-black);
     background-color: var(--color-border-grey);
@@ -164,6 +167,58 @@ hr {
     margin-bottom: 2em;
     cursor: pointer;
 }
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+/* Modal Content/Box */
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    width: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.modal header,
+.modal footer {
+    background-color: var(--color-deep-grey);
+    color: var(--color-white);
+}
+
+.modal-main {
+    background-color: var(--color-white);
+}
+
+.modal-main a {
+    color: var(--color-black);
+    text-decoration: underline;
+}
+
+/* Close Modal */
+.close-modal {
+    color: var(--color-grey);
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.2em;
+  }
 
 /* Features */
 .features {
@@ -708,6 +763,12 @@ button {
 
     .feature:last-child {
         margin-right: 0;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        width: 80%;
+        max-width: 800px;
     }
 
     /* Color Classes */
