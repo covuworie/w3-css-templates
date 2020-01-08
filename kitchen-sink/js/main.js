@@ -83,3 +83,14 @@ let closeModal = function() {
     modal = document.querySelector(".modal");
     modal.style.display = "none";
 }
+
+// Side navigation
+let openSideNav = function() {
+    nav = document.querySelector(".side-nav");
+    nav.style.display = "block";
+}
+
+let closeSideNav = function() {
+    nav = document.querySelector(".side-nav");
+    nav.style.display = "none";
+}

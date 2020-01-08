@@ -10,12 +10,20 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <!-- Side Navigation -->
+        <nav class="side-nav">
+            <ul>
+                <li>Side Navigation</li>
+                <li onclick="closeSideNav()">Close &times</li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>      
+        </nav>
         <!-- Header -->
         <header class="header white-on-black">
-            <nav>
-                <i class="fa fa-bars fa-lg"></i>
-                <!-- Should hold links when I learn javascript -->
-            </nav>
+            <i class="fa fa-bars fa-lg" onclick="openSideNav()"></i>
             <div class="header-main">
                 <h4>Beautiful responsive web sites</h2>
                 <h1>Built with w3.css</h1>

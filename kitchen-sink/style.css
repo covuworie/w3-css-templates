@@ -73,6 +73,10 @@ ul li {
     margin: 1rem;
 }
 
+.fa-bars {
+    padding: 1em;
+}
+
 p {
     padding: 1rem;
 }
@@ -149,7 +153,9 @@ hr {
 .button:hover,
 .white-button:hover,
 .close-modal:hover,
-.close-modal:focus
+.close-modal:focus,
+.side-nav li:hover,
+.fa-bars:hover
 {
     color: var(--color-black);
     background-color: var(--color-border-grey);
@@ -167,6 +173,48 @@ hr {
     margin-bottom: 2em;
     cursor: pointer;
 }
+
+/* Side Navigation */
+.side-nav {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    text-align: center;
+    overflow: hidden;
+    font-size: 2.5em;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    animation: animateleft 0.4s;
+}
+
+.side-nav li:nth-child(1) {
+    margin-top: 3%;
+}
+
+/* Add Animation */
+@keyframes animateleft {
+    from { 
+        left:-300px;
+        opacity:0
+    } 
+    to {
+        left:0;
+        opacity:1
+    }
+}
+
+.side-nav a {
+    color: var(--color-black);
+}
+
+.side-nav li:nth-child(1) 
+{
+    background-color: var(--color-white);
+    cursor: default;
+}
+
 
 /* The Modal (background) */
 .modal {
@@ -192,8 +240,14 @@ hr {
 
 /* Add Animation */
 @keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 .modal header,
